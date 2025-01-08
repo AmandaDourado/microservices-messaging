@@ -18,6 +18,7 @@ public class ClienteController {
 
     @GetMapping
     public String status() {
+        System.out.println("Obtendo o status do ms de clientes");
         return "ok";
     }
 
