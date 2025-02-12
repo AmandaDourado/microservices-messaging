@@ -21,6 +21,7 @@ public class MsgatewayApplication {
 				.routes()
 				.route(r -> r.path("/clientes/**").uri("lb://msclientes")) //lb = loadbalancer
 				.route(r -> r.path("/cartoes/**").uri("lb://mscards")) //lb = loadbalancer
+				.route(r -> r.path("/avaliacoes-credito/**").uri("lb://msavalidorcredito")) //lb = loadbalancer
 				.build();
 	}
 
