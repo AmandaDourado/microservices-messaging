@@ -35,6 +35,7 @@ public class EmissaoCartaoSubscriber {
             clienteCartaoRepository.save(clienteCartao);
 
         } catch (JacksonException e) {
+            
             e.printStackTrace();
         }
     }
